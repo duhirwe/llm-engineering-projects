@@ -22,7 +22,7 @@ The assistant uses OpenAI function calling and a local SQLite database.
 ## Setup (uv) and run the application
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/duhirwe/llm-engineering-projects.git
 cd timber-sales-assistant
 ```
 ### 2. Install dependencies
