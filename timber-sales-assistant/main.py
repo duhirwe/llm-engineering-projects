@@ -1,6 +1,19 @@
-def main():
-    print("Hello from timber-sales-assistant!")
+import gradio as gr
+
+from handle_chats import chat
+
+
+initial_message = [
+    {
+        "role": "assistant",
+        "content": "Hello! How can I assist you with timber products today?"
+    }
+]
+chatbot = gr.Chatbot(value=initial_message)
 
 
 if __name__ == "__main__":
-    main()
+    gr.ChatInterface(
+        fn=chat,
+        chatbot=chatbot
+    ).launch()
